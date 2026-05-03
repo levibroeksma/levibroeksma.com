@@ -1,0 +1,174 @@
+{
+  "nl": {
+    "hero": {
+      "title": {
+        "prefix": "Fullstack ",
+        "highlight": "ingenieur",
+        "suffix": " met oog voor detail"
+      },
+      "description": "Ik bouw schaalbare, onderhoudbare software — van event-driven architecturen tot interactieve geo-visualisaties. Met passie voor kwaliteit, ambacht en geschikt voor morgen in een tijd waarin AI de wereld verandert.",
+      "stats": [
+        {
+          "title": "5+",
+          "description": "Jaar ervaring"
+        },
+        {
+          "title": "5",
+          "description": "Recente projecten"
+        },
+        {
+          "title": "4",
+          "description": "Talen"
+        },
+        {
+          "title": "BSc",
+          "description": "Computerwetenschappen"
+        }
+      ]
+    },
+    "about": {
+      "label": "01 — Over",
+      "title": "Maker, denker, doener",
+      "dateOfBirth": "26 — 07 — 1992",
+      "paragraphs": [
+        "Ik heb een passie voor dingen maken, kwaliteit en ben detailgericht. Zo ben ik gefascineerd door horlogerie, houtbewerken, kunst, theater en cabaret. Ik hou van tekenen, gamen, programmeren, lezen, tijd doorbrengen met mijn vrienden, mijn vriendin en onze katten — en praten over politiek en maatschappij, muziek, familie en mijn vakgebied.",
+        "Ik ben communicatief vaardig, creatief en vindingrijk. Op professioneel vlak ben ik flexibel, leergierig, gestructureerd, werk graag in teamverband en hou ervan om complexe uitdagingen te vertalen naar werkende oplossingen."
+      ]
+    },
+    "projects": {
+      "label": "02 — Werk",
+      "title": "Recente projectervaring",
+      "description": "Een selectie van projecten waar ik de laatste jaren aan heb bijgedragen — van afstudeerwerk tot consortia.",
+      "highlight": {
+        "label": "Specialisme",
+        "title": "Geo & data visualisatie",
+        "description": "Bij MAPtm veelvuldig gewerkt met geografische plug-ins en vraagstukken: GeoJSON, Leaflet.js, eCharts en Chart.js voor verkeersdata op kaarten en in grafieken. Onder andere OV-routevoorspellingen plotten over tijd, kaarten met vaste frequentie verversen, verkeersdata aggregeren en plotten, en interactieve koppelingen tussen kaart- en grafiekdata bouwen.",
+        "tags": ["GeoJSON", "Leaflet.js", "eCharts", "Chart.js"]
+      }
+    },
+    "skills": {
+      "label": "03 — Toolkit",
+      "title": "Programmeertalen, databases & gereedschap",
+      "categories": {
+        "languages": "Programmeertalen",
+        "databases": "Databases",
+        "cloud": "Clouddiensten",
+        "tools": "Tooling"
+      },
+      "languagesTitle": "Talen",
+      "educationTitle": "Opleidingen",
+      "trainingsTitle": "Trainingen & cursussen"
+    },
+    "contact": {
+      "label": "04 — Contact",
+      "title": "Laten we iets goeds bouwen",
+      "description": "Informeer naar mijn beschikbaarheid of het maken van een vrijblijvend kennismakingsgesprek.",
+      "emailLabel": "Email",
+      "emailValue": "levi.broeksma@maptm.nl",
+      "addressLabel": "Adres",
+      "addressValue": "Eemnes, Utrecht"
+    },
+    "nav": {
+      "brandFirst": "Levi",
+      "brandLast": "Broeksma",
+      "links": [
+        { "href": "#about", "text": "Over" },
+        { "href": "#projects", "text": "Projecten" },
+        { "href": "#skills", "text": "Skills" },
+        { "href": "#contact", "text": "Contact" }
+      ],
+      "contactHref": "mailto:levi.broeksma@maptm.nl",
+      "contactText": "Neem contact op"
+    },
+    "footer": {
+      "copyrightName": "Levi Broeksma",
+      "tagline": "Crafted with care · Eemnes, Utrecht, Nederland"
+    }
+  },
+  "en": {
+    "hero": {
+      "title": {
+        "prefix": "Fullstack ",
+        "highlight": "engineer",
+        "suffix": " with an eye for detail"
+      },
+      "description": "I build scalable, maintainable software — from event-driven architectures to interactive geo-visualizations. Passionate about quality, craftsmanship, and built for tomorrow in a time when AI is changing the world.",
+      "stats": [
+        {
+          "title": "5+",
+          "description": "Years of experience"
+        },
+        {
+          "title": "5",
+          "description": "Recent projects"
+        },
+        {
+          "title": "4",
+          "description": "Languages"
+        },
+        {
+          "title": "BSc",
+          "description": "Computer Science"
+        }
+      ]
+    },
+    "about": {
+      "label": "01 — About",
+      "title": "Maker, thinker, doer",
+      "dateOfBirth": "26 — 07 — 1992",
+      "paragraphs": [
+        "I have a passion for making things, for quality, and I am detail-oriented. That is why I am fascinated by horology, woodworking, art, theater, and cabaret. I enjoy drawing, gaming, programming, reading, spending time with my friends, my girlfriend and our cats — and talking about politics and society, music, family, and my field of work.",
+        "I am communicative, creative, and resourceful. Professionally, I am flexible, eager to learn, and structured; I enjoy working in teams and translating complex challenges into working solutions."
+      ]
+    },
+    "projects": {
+      "label": "02 — Work",
+      "title": "Recent project experience",
+      "description": "A selection of projects I have contributed to in recent years — from graduation work to consortia.",
+      "highlight": {
+        "label": "Specialism",
+        "title": "Geo & data visualization",
+        "description": "At MAPtm I worked extensively with geographic plugins and challenges: GeoJSON, Leaflet.js, eCharts and Chart.js for traffic data on maps and in charts. This included plotting public transport route predictions over time, refreshing maps at fixed intervals, aggregating and plotting traffic data, and building interactive links between map and chart data.",
+        "tags": ["GeoJSON", "Leaflet.js", "eCharts", "Chart.js"]
+      }
+    },
+    "skills": {
+      "label": "03 — Toolkit",
+      "title": "Programming languages, databases & tools",
+      "categories": {
+        "languages": "Programming languages",
+        "databases": "Databases",
+        "cloud": "Cloud services",
+        "tools": "Tooling"
+      },
+      "languagesTitle": "Languages",
+      "educationTitle": "Education",
+      "trainingsTitle": "Training & courses"
+    },
+    "contact": {
+      "label": "04 — Contact",
+      "title": "Let's build something great",
+      "description": "Ask about my availability or scheduling a no-obligation introductory call.",
+      "emailLabel": "Email",
+      "emailValue": "levi.broeksma@maptm.nl",
+      "addressLabel": "Address",
+      "addressValue": "Eemnes, Utrecht"
+    },
+    "nav": {
+      "brandFirst": "Levi",
+      "brandLast": "Broeksma",
+      "links": [
+        { "href": "#about", "text": "About" },
+        { "href": "#projects", "text": "Projects" },
+        { "href": "#skills", "text": "Skills" },
+        { "href": "#contact", "text": "Contact" }
+      ],
+      "contactHref": "mailto:levi.broeksma@maptm.nl",
+      "contactText": "Get in touch"
+    },
+    "footer": {
+      "copyrightName": "Levi Broeksma",
+      "tagline": "Crafted with care · Eemnes, Utrecht, Netherlands"
+    }
+  }
+}

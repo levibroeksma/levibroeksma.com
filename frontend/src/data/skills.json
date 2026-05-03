@@ -1,0 +1,24 @@
+{
+  "languages": [
+    "Java (+ Spring Boot)",
+    "Python (+ AWS Chalice)",
+    "Rust",
+    "JavaScript (React, Astro, Alpine, Node)",
+    "HTML/CSS (Tailwind)",
+    "JS & Python libraries"
+  ],
+  "databases": ["PostgreSQL", "DynamoDB", "MySQL", "SQLite"],
+  "cloud": ["AWS", "Netlify", "Monday.com"],
+  "tools": [
+    "Office 365",
+    "VS Code / Cursor",
+    "IntelliJ IDEA",
+    "Fork",
+    "GitHub",
+    "Adobe Creative Cloud",
+    "Postman",
+    "PgAdmin",
+    "Figma",
+    "Canva"
+  ]
+}

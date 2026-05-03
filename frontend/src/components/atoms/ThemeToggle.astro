@@ -1,0 +1,23 @@
+---
+import Moon from "@icons/MoonIcon.astro";
+import Sun from "@icons/SunIcon.astro";
+---
+
+<button
+  id="theme-toggle"
+  type="button"
+  aria-label="Schakel naar lichte modus"
+  class="inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-border bg-card text-foreground hover:bg-secondary transition-smooth"
+>
+  <span data-theme-icon="sun" class="h-4 w-4">
+    <Sun class="h-4 w-4" />
+  </span>
+  <span data-theme-icon="moon" class="h-4 w-4 hidden">
+    <Moon class="h-4 w-4" />
+  </span>
+</button>
+
+<script>
+  import { initThemeToggle } from "@lib/theme-toggle.js";
+  initThemeToggle("theme-toggle");
+</script>

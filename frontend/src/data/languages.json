@@ -1,0 +1,6 @@
+[
+  { "name": "Nederlands", "level": "Moedertaal", "pct": 100 },
+  { "name": "Engels", "level": "Uitstekend", "pct": 95 },
+  { "name": "Duits", "level": "Gespreksvaardig", "pct": 70 },
+  { "name": "Frans", "level": "A2", "pct": 40 }
+]

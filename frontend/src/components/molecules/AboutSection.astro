@@ -1,0 +1,25 @@
+---
+import i18n from "@data/i18n.json";
+const { locale = "nl" } = Astro.props;
+const { about } = i18n[locale as keyof typeof i18n] ?? i18n.nl;
+
+---
+
+<section id="about" class="section-pad">
+  <div class="container mx-auto grid md:grid-cols-12 gap-12">
+    <div class="md:col-span-4">
+      <div class="text-xs font-mono uppercase tracking-widest text-accent mb-3">
+        {about.label}
+      </div>
+      <h2 class="font-display text-4xl md:text-5xl font-medium leading-tight">
+        {about.title}<span class="text-accent">.</span>
+      </h2>
+      <p class="mt-4 text-sm text-muted-foreground">{about.dateOfBirth}</p>
+    </div>
+    <div
+      class="md:col-span-8 space-y-6 text-base md:text-lg leading-relaxed text-foreground/85"
+    >
+      {about.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+    </div>
+  </div>
+</section>
