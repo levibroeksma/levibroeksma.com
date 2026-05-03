@@ -1,0 +1,67 @@
+---
+import "../styles/global.css";
+import Nav from "../components/molecules/Nav.astro";
+import Footer from "../components/molecules/Footer.astro";
+
+const { locale } = Astro.props;
+---
+
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600;700&display=swap"
+      />
+    </noscript>
+    <title>Levi Broeksma — Fullstack ingenieur</title>
+    <meta
+      name="description"
+      content="CV van Levi Broeksma — Fullstack ingenieur met passie voor kwaliteit, detail en schaalbare software."
+    />
+    <meta name="author" content="Levi Broeksma" />
+    <script>
+      (() => {
+        const root = document.documentElement;
+        try {
+          const savedTheme = localStorage.getItem("theme");
+          if (savedTheme === "dark" || savedTheme === "light") {
+            root.classList.toggle("dark", savedTheme === "dark");
+            return;
+          }
+        } catch {}
+        root.classList.toggle(
+          "dark",
+          window.matchMedia("(prefers-color-scheme: dark)").matches,
+        );
+      })();
+    </script>
+  </head>
+  <body>
+    <Nav />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
