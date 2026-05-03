@@ -3,12 +3,13 @@ import "../styles/global.css";
 import NavSection from "../components/molecules/NavSection.astro";
 import FooterSection from "../components/molecules/FooterSection.astro";
 
-const { locale } = Astro.props;
+const { locale, noindex } = Astro.props;
 ---
 
 <html lang={locale}>
   <head>
     <meta charset="utf-8" />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
 
