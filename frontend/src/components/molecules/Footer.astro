@@ -1,0 +1,19 @@
+---
+const year = new Date().getFullYear();
+import i18n from "@data/i18n.json";
+const { locale = "nl" } = Astro.props;
+const { footer } = i18n[locale as keyof typeof i18n] ?? i18n.nl;
+---
+
+<footer class="py-5 border-t border-border">
+  <div
+    class="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground"
+  >
+    <div class="font-display">
+      <span class="text-accent">© </span>
+      {year}
+      {footer.copyrightName}
+    </div>
+    <div class="font-mono text-xs">{footer.tagline}</div>
+  </div>
+</footer>
