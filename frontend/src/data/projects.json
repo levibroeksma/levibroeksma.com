@@ -1,0 +1,63 @@
+[
+  {
+    "title": "VEMAP",
+    "org": "MAPtm / NOVI Hogeschool",
+    "period": "2025 / 2026",
+    "stack": [
+      "Python",
+      "AWS Chalice",
+      "AWS S3",
+      "AWS Cognito",
+      "AWS SQS",
+      "AWS SES",
+      "AstroJS",
+      "AlpineJS",
+      "ReactJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "description": "Afstudeerproject (Bachelor ICT Software Development): zelfstandig ontworpen en gebouwd. VEMAP ondersteunt het VKM-planproces via standaardisatie en automatisering. Gewerkt volgens OOP, Clean / Microservice / Event-Driven architecturen, SOLID/DRY/KISS/SoC en schaalbaar databaseontwerp."
+  },
+  {
+    "title": "Synchromode Dashboard",
+    "org": "Synchromode-consortium",
+    "period": "2025",
+    "stack": [
+      "Python",
+      "AWS Chalice",
+      "AWS S3",
+      "Kafka",
+      "AstroJS",
+      "AlpineJS"
+    ],
+    "description": "Druktepredictietool gebouwd op het TrafficDash-fundament. Combineert monitoring met druktevoorspellingsdata voor bottlenecks rondom weersgevoelige OV-infrastructuur. Event-driven, met een Kafka-topic dat elke 5 minuten een voorspelling op het wegennet doet. In samenwerking met CERTH en Be-Mobile."
+  },
+  {
+    "title": "TrafficDash",
+    "org": "MAPtm",
+    "period": "2021 – 2026",
+    "stack": [
+      "Python",
+      "AWS Chalice",
+      "AWS S3",
+      "AstroJS",
+      "AlpineJS",
+      "PostgreSQL"
+    ],
+    "description": "Als onderdeel van het projectteam (voornamelijk frontend) bijgedragen aan TrafficDash: monitoringsfunctionaliteit (configuratie en weergave), de evaluatiepagina en periodenconfiguratie. Maakt gebruik van meerdere databronnen van het NDW."
+  },
+  {
+    "title": "FAME Taxonomy",
+    "org": "MAPtm, FAME-consortium",
+    "period": "2024",
+    "stack": ["Python", "AWS Chalice", "AstroJS", "AlpineJS", "Netlify"],
+    "description": "Webapplicatie voor de FAME-taxonomy. Onderhoudbaar door iedereen met basis computervaardigheden: een Excel-sheet wordt door een Python-script geparsed, gevalideerd en omgezet naar JSON, dat als bron dient voor de met templating gegenereerde webapplicatie."
+  },
+  {
+    "title": "Receptentracker",
+    "org": "NOVI Hogeschool",
+    "period": "2021",
+    "stack": ["Java", "Spring Boot", "ReactJS"],
+    "description": "Eindopdracht HBO Fullstack Developer bootcamp. Een receptgebaseerd socialmediaplatform waarop je recepten van anderen kunt opslaan, dupliceren en bewerken — een digitaal kookboek."
+  }
+]
