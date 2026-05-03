@@ -1,0 +1,29 @@
+---
+import NavLink from "../atoms/NavLink.astro";
+import GradientLinkButton from "../atoms/GradientLinkButton.astro";
+import ThemeToggle from "../atoms/ThemeToggle.astro";
+import i18n from "@data/i18n.json";
+const { locale = "nl" } = Astro.props;
+const { nav } = i18n[locale as keyof typeof i18n] ?? i18n.nl;
+---
+
+<nav
+  class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/70 border-b border-border/50"
+>
+  <div class="container mx-auto flex items-center justify-between py-4">
+    <span class="text-lg font-semibold tracking-tight font-serif">
+      {nav.brandFirst}
+      <span class="text-accent">.</span>
+      {nav.brandLast}
+    </span>
+    <div
+      class="hidden md:flex items-center gap-8 text-sm text-muted-foreground"
+    >
+      {nav.links.map((link) => <NavLink href={link.href} text={link.text} />)}
+    </div>
+    <div class="flex items-center gap-3">
+      <ThemeToggle />
+      <GradientLinkButton href={nav.contactHref} text={nav.contactText} />
+    </div>
+  </div>
+</nav>
