@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
-import Nav from "../components/molecules/Nav.astro";
-import Footer from "../components/molecules/Footer.astro";
+import NavSection from "../components/molecules/NavSection.astro";
+import FooterSection from "../components/molecules/FooterSection.astro";
 
 const { locale } = Astro.props;
 ---
@@ -58,10 +58,10 @@ const { locale } = Astro.props;
     </script>
   </head>
   <body>
-    <Nav />
+    <NavSection />
     <main>
       <slot />
     </main>
-    <Footer />
+    <FooterSection />
   </body>
 </html>
