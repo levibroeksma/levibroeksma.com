@@ -1,0 +1,16 @@
+---
+const { title, description } = Astro.props;
+---
+
+<article class="@container/HeroStatCard">
+  <h2
+    class="text-3xl @sm/HeroStatCard:text-4xl font-semibold text-gradient font-serif"
+  >
+    {title}
+  </h2>
+  <p
+    class="mt-1 text-[0.625rem] sm:text-xs text-muted-foreground uppercase tracking-wider"
+  >
+    {description}
+  </p>
+</article>

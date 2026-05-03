@@ -1,0 +1,69 @@
+---
+import Sparkles from "@icons/SparklesIcon.astro";
+import ArrowUpRight from "@icons/ArrowUpRightIcon.astro";
+import SecondaryBtn from "@atoms/SecondaryBtn.astro";
+import PrimaryBtn from "@atoms/PrimaryBtn.astro";
+import HeroStatCard from "@atoms/HeroStatCard.astro";
+
+const year = new Date().getFullYear();
+
+const { locale = "nl" } = Astro.props;
+
+import i18n from "@data/i18n.json";
+const { hero } = i18n[locale as keyof typeof i18n] ?? i18n.nl;
+---
+
+<header
+  id="top"
+  class="relative overflow-hidden px-4 sm:px-8 md:px-12 py-24 sm:py-32 md:py-40"
+>
+  <div
+    class="absolute -top-32 -right-32 h-96 w-96 rounded-full bg-primary-glow/10 blur-3xl"
+    aria-hidden
+  >
+  </div>
+  <div
+    class="absolute top-40 -left-32 h-80 w-80 rounded-full bg-accent/10 blur-3xl"
+    aria-hidden
+  >
+  </div>
+
+  <div class="container mx-auto relative">
+    <div class="max-w-3xl flex flex-col gap-6 sm:gap-12 md:gap-18">
+      <div
+        class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-muted-foreground mb-6"
+      >
+        <Sparkles class="h-3.5 w-3.5 text-accent" />
+        Curriculum Vitae <span class="text-accent">·</span>
+        {year}
+      </div>
+      <h1
+        class="font-display text-5xl md:text-7xl lg:text-8xl font-medium leading-[0.95] tracking-tight"
+      >
+        {hero.title.prefix}
+        <span class="text-gradient not-italic">{hero.title.highlight}</span>
+        {hero.title.suffix}<span class="text-accent">.</span>
+      </h1>
+      <p
+        class="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed"
+      >
+        {hero.description}
+      </p>
+
+      <div class="flex flex-wrap items-center gap-3">
+        <PrimaryBtn href="#projects" text="Bekijk projecten">
+          <ArrowUpRight slot="icon" class="h-4 w-4" />
+        </PrimaryBtn>
+        <SecondaryBtn href="#contact" text="Contactgegevens" />
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-y-8 max-w-2xl">
+        {
+          hero.stats.map((s) => (
+            <HeroStatCard title={s.title} description={s.description} />
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</header>
