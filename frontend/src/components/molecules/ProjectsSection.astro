@@ -1,0 +1,104 @@
+---
+import projects from "../../data/projects.json";
+import i18n from "@data/i18n.json";
+const { locale = "nl" } = Astro.props;
+const { projects: projectsI18n } = i18n[locale as keyof typeof i18n] ?? i18n.nl;
+---
+
+<section id="projects" class="section-pad bg-card border-y border-border">
+  <div class="container mx-auto">
+    <div
+      class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16"
+    >
+      <div>
+        <div
+          class="text-xs font-mono uppercase tracking-widest text-accent mb-3"
+        >
+          {projectsI18n.label}
+        </div>
+        <h2
+          class="font-display text-4xl md:text-5xl font-medium leading-tight max-w-2xl"
+        >
+          {projectsI18n.title}<span class="text-accent">.</span>
+        </h2>
+      </div>
+      <p class="text-muted-foreground max-w-md">
+        {projectsI18n.description}
+      </p>
+    </div>
+
+    <div class="space-y-4">
+      {
+        projects.map((p, i) => (
+          <article
+            class="group relative rounded-2xl border border-border bg-background p-6 md:p-8 hover:border-primary/30 hover:shadow-soft transition-smooth"
+          >
+            <div class="grid md:grid-cols-12 gap-6 md:gap-8">
+              <div class="md:col-span-3">
+                <div class="font-mono text-xs text-muted-foreground">
+                  {String(i + 1).padStart(2, "0")} /{" "}
+                  {projects.length.toString().padStart(2, "0")}
+                </div>
+                <h3 class="font-display text-2xl md:text-3xl font-semibold mt-2 leading-tight">
+                  {p.title}
+                </h3>
+                <div class="mt-2 text-sm text-muted-foreground">{p.org}</div>
+                <div class="mt-1 text-xs font-mono text-accent">{p.period}</div>
+              </div>
+              <div class="md:col-span-9 space-y-4">
+                <p class="text-foreground/85 leading-relaxed">
+                  {p.description}
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  {p.stack.map((t) => (
+                    <span
+                      class="inline-block text-xs font-mono px-2.5 py-1 rounded-md bg-secondary text-secondary-foreground border border-border"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+
+    {/* Plug-ins highlight */}
+    <div
+      class="mt-12 rounded-2xl gradient-primary text-primary-foreground p-8 md:p-12 shadow-elegant"
+    >
+      <div class="grid md:grid-cols-12 gap-8 items-start">
+        <div class="md:col-span-4">
+          <div
+            class="text-xs font-mono uppercase tracking-widest opacity-70 mb-3"
+          >
+            {projectsI18n.highlight.label}
+          </div>
+          <h3
+            class="font-display text-3xl md:text-4xl font-medium leading-tight"
+          >
+            {projectsI18n.highlight.title}
+          </h3>
+        </div>
+        <div class="md:col-span-8">
+          <p class="text-primary-foreground/90 leading-relaxed">
+            {projectsI18n.highlight.description}
+          </p>
+          <div class="mt-6 flex flex-wrap gap-2">
+            {
+              projectsI18n.highlight.tags.map((t) => (
+                <span
+                  class="text-xs font-mono px-2.5 py-1 rounded-md bg-primary-foreground/10 border border-primary-foreground/20"
+                >
+                  {t}
+                </span>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
