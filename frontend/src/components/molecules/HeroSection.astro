@@ -7,10 +7,10 @@ import HeroStatCard from "@atoms/HeroStatCard.astro";
 
 const year = new Date().getFullYear();
 
-const { locale = "nl" } = Astro.props;
-
 import i18n from "@data/i18n.json";
-const { hero } = i18n[locale as keyof typeof i18n] ?? i18n.nl;
+import { getLangFromPathname } from "@lib/utils/i18n.js";
+const { hero } = i18n;
+const lang = getLangFromPathname(Astro.url.pathname) || "nl";
 ---
 
 <header
@@ -40,14 +40,16 @@ const { hero } = i18n[locale as keyof typeof i18n] ?? i18n.nl;
       <h1
         class="font-display text-5xl md:text-7xl lg:text-8xl font-medium leading-[0.95] tracking-tight"
       >
-        {hero.title.prefix}
-        <span class="text-gradient not-italic">{hero.title.highlight}</span>
-        {hero.title.suffix}<span class="text-accent">.</span>
+        {hero.title[lang].prefix}
+        <span class="text-gradient not-italic"
+          >{hero.title[lang].highlight}</span
+        >
+        {hero.title[lang].suffix}<span class="text-accent">.</span>
       </h1>
       <p
         class="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed"
       >
-        {hero.description}
+        {hero.description[lang]}
       </p>
 
       <div class="flex flex-wrap items-center gap-3">
@@ -59,7 +61,7 @@ const { hero } = i18n[locale as keyof typeof i18n] ?? i18n.nl;
 
       <div class="grid grid-cols-2 md:grid-cols-4 gap-y-8 max-w-2xl">
         {
-          hero.stats.map((s) => (
+          hero.stats[lang]?.map((s) => (
             <HeroStatCard title={s.title} description={s.description} />
           ))
         }
