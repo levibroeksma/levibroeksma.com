@@ -1,5 +1,18 @@
 import { atom } from "nanostores";
 
+/**
+ * Persist theme so SSR and client navigation share the same value.
+ * @param {"dark" | "light"} theme
+ * @returns {void}
+ */
+function persistTheme(theme) {
+  try {
+    localStorage.setItem("theme", theme);
+  } catch {}
+  document.cookie =
+    "theme=" + theme + "; Path=/; Max-Age=31536000; SameSite=Lax";
+}
+
 export function initThemeToggle(buttonId = "theme-toggle") {
   const root = document.documentElement;
   const toggle = document.getElementById(buttonId);
@@ -35,9 +48,7 @@ export function initThemeToggle(buttonId = "theme-toggle") {
     store.set(theme);
     applyUi(theme);
     if (!persist) return;
-    try {
-      localStorage.setItem("theme", theme);
-    } catch {}
+    persistTheme(theme);
   };
 
   setTheme(store.get(), false);
