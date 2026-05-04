@@ -1,14 +1,34 @@
 {
   "languages": [
-    "Java (+ Spring Boot)",
-    "Python (+ AWS Chalice)",
-    "Rust",
-    "JavaScript (React, Astro, Alpine, Node)",
-    "HTML/CSS (Tailwind)",
-    "JS & Python libraries"
+    { "name": "Java", "items": ["Spring Boot"] },
+    { "name": "Python", "items": ["AWS Chalice", "Flask", "Django"] },
+    { "name": "Rust", "items": [] },
+    {
+      "name": "JavaScript",
+      "items": ["React", "Astro", "Alpine", "Node"]
+    },
+    { "name": "HTML", "items": [] },
+    { "name": "CSS", "items": ["Tailwind"] }
   ],
   "databases": ["PostgreSQL", "DynamoDB", "MySQL", "SQLite"],
-  "cloud": ["AWS", "Netlify", "Monday.com"],
+  "cloud": [
+    {
+      "name": "AWS",
+      "items": [
+        "AWS Chalice",
+        "AWS S3",
+        "AWS SQS",
+        "AWS SNS",
+        "AWS SES",
+        "AWS Cognito",
+        "AWS Lambda",
+        "AWS API Gateway",
+        "AWS CloudFront",
+        "AWS CloudWatch"
+      ]
+    },
+    "Netlify"
+  ],
   "tools": [
     "Office 365",
     "VS Code / Cursor",
@@ -19,6 +39,8 @@
     "Postman",
     "PgAdmin",
     "Figma",
-    "Canva"
+    "Canva",
+    "Sketch",
+    "Monday.com"
   ]
 }
