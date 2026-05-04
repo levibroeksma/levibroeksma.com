@@ -2,9 +2,9 @@
 import Location from "../../icons/LocationIcon.astro";
 import Mail from "../../icons/MailIcon.astro";
 import ArrowUpRight from "../../icons/ArrowUpRightIcon.astro";
-import i18n from "@data/i18n.json";
-const { locale = "nl" } = Astro.props;
-const { contact } = i18n[locale as keyof typeof i18n] ?? i18n.nl;
+import { contact } from "@data/i18n.json";
+import { getLangFromPathname } from "@lib/utils/i18n.js";
+const lang = getLangFromPathname(Astro.url.pathname) || "nl";
 ---
 
 <section id="contact" class="section-pad">
@@ -22,29 +22,29 @@ const { contact } = i18n[locale as keyof typeof i18n] ?? i18n.nl;
           <div
             class="text-xs font-mono uppercase tracking-widest mb-3 text-white"
           >
-            {contact.label}
+            {contact[lang].label}
           </div>
           <h2
             class="font-display text-4xl md:text-6xl font-medium leading-[1.05] text-white"
           >
-            {contact.title}<span class="text-accent">.</span>
+            {contact[lang].title}<span class="text-accent">.</span>
           </h2>
           <p class="mt-5 max-w-lg leading-relaxed text-white">
-            {contact.description}
+            {contact[lang].description}
           </p>
         </div>
         <div class="md:col-span-5 space-y-3">
           <a
-            href={`mailto:${contact.emailValue}`}
+            href={`mailto:${contact[lang].emailValue}`}
             class="flex items-center gap-4 p-4 rounded-xl bg-primary-foreground/5 hover:bg-primary-foreground/10 border border-primary-foreground/10 transition-smooth group"
           >
             <Mail class="h-5 w-5 text-accent shrink-0" />
             <div class="min-w-0">
               <div class="text-xs uppercase tracking-wider text-white">
-                {contact.emailLabel}
+                {contact[lang].emailLabel}
               </div>
               <div class="font-medium truncate text-white">
-                {contact.emailValue}
+                {contact[lang].emailValue}
               </div>
             </div>
             <ArrowUpRight
@@ -57,10 +57,10 @@ const { contact } = i18n[locale as keyof typeof i18n] ?? i18n.nl;
             <Location class="h-5 w-5 text-accent shrink-0" />
             <div>
               <div class="text-xs uppercase tracking-wider text-white">
-                {contact.addressLabel}
+                {contact[lang].addressLabel}
               </div>
               <div class="font-medium text-white">
-                {contact.addressValue}
+                {contact[lang].addressValue}
               </div>
             </div>
           </div>

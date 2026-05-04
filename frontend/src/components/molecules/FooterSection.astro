@@ -1,8 +1,9 @@
 ---
 const year = new Date().getFullYear();
 import i18n from "@data/i18n.json";
-const { locale = "nl" } = Astro.props;
-const { footer } = i18n[locale as keyof typeof i18n] ?? i18n.nl;
+import { getLangFromPathname } from "@lib/utils/i18n.js";
+const lang = getLangFromPathname(Astro.url.pathname) || "nl";
+const { footer } = i18n;
 ---
 
 <footer class="py-5 border-t border-border">
@@ -12,8 +13,8 @@ const { footer } = i18n[locale as keyof typeof i18n] ?? i18n.nl;
     <div class="font-display">
       <span class="text-accent">© </span>
       {year}
-      {footer.copyrightName}
+      {footer[lang].copyrightName}
     </div>
-    <div class="font-mono text-xs">{footer.tagline}</div>
+    <div class="font-mono text-xs">{footer[lang].tagline}</div>
   </div>
 </footer>
