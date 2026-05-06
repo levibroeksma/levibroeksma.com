@@ -1,33 +1,35 @@
 {
   "languages": [
+    { "name": "HTML", "items": [] },
+    { "name": "CSS", "items": ["Tailwind"] },
     { "name": "Java", "items": ["Spring Boot"] },
     { "name": "Python", "items": ["AWS Chalice", "Flask", "Django"] },
     { "name": "Rust", "items": [] },
     {
       "name": "JavaScript",
-      "items": ["React", "Astro", "Alpine", "Node"]
-    },
-    { "name": "HTML", "items": [] },
-    { "name": "CSS", "items": ["Tailwind"] }
+      "items": ["AstroJS", "AlpineJS", "ReactJS", "NodeJS", " TypeScript"]
+    }
   ],
-  "databases": ["PostgreSQL", "DynamoDB", "MySQL", "SQLite"],
+  "databases": ["PostgreSQL", "MongoDB", "MySQL", "SQLite"],
   "cloud": [
     {
       "name": "AWS",
       "items": [
-        "AWS Chalice",
-        "AWS S3",
-        "AWS SQS",
-        "AWS SNS",
-        "AWS SES",
-        "AWS Cognito",
-        "AWS Lambda",
-        "AWS API Gateway",
-        "AWS CloudFront",
-        "AWS CloudWatch"
+        "S3",
+        "SQS",
+        "SNS",
+        "SES",
+        "Cognito",
+        "Lambda",
+        "API Gateway",
+        "CloudFront",
+        "CloudWatch"
       ]
     },
-    "Netlify"
+    {
+      "name": "Netlify",
+      "items": []
+    }
   ],
   "tools": [
     "Office 365",
