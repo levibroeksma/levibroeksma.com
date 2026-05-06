@@ -1,0 +1,43 @@
+---
+// Components
+import Tag from "@atoms/Tag.astro";
+import EduListItem from "@atoms/EduListItem.astro";
+
+// Data
+import education from "@data/education.json";
+import trainings from "@data/trainings.json";
+import { skills as skillsI18n } from "@data/i18n.json";
+
+// Icons
+import GraduationCap from "@icons/GraduationCapIcon.astro";
+
+// Utils
+import { getLangFromPathname } from "@lib/utils/i18n.js";
+
+// Constants
+const lang = getLangFromPathname(Astro.url.pathname);
+
+// Props
+---
+
+<article class="rounded-2xl border border-border bg-card p-8 w-full">
+  <div class="flex items-center gap-3 mb-6">
+    <GraduationCap class="h-5 w-5 text-accent" />
+    <h3 class="font-display text-2xl font-semibold">
+      {skillsI18n[lang].educationTitle}
+    </h3>
+  </div>
+  <ul class="space-y-4">
+    {education.map((e) => <EduListItem title={e.title} period={e.period} />)}
+  </ul>
+  <div class="mt-6 pt-6 border-t border-accent">
+    <div
+      class="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-3"
+    >
+      {skillsI18n[lang].trainingsTitle}
+    </div>
+    <div class="flex flex-wrap gap-2">
+      {trainings.map((t) => <Tag text={t} />)}
+    </div>
+  </div>
+</article>

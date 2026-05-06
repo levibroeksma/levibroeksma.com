@@ -1,0 +1,24 @@
+---
+import LangIcon from "../../icons/LanguagesIcon.astro";
+import languages from "../../data/languages.json";
+import { skills as skillsI18n } from "@data/i18n.json";
+import { getLangFromPathname } from "@lib/utils/i18n.js";
+import ProgressBar from "@atoms/ProgressBar.astro";
+const lang = getLangFromPathname(Astro.url.pathname) || "nl";
+---
+
+<article class="rounded-2xl border border-border bg-card p-8 w-full">
+  <div class="flex items-center gap-3 mb-6">
+    <LangIcon class="h-5 w-5 text-accent" />
+    <h3 class="font-display text-2xl font-semibold">
+      {skillsI18n[lang].languagesTitle}
+    </h3>
+  </div>
+  <div class="space-y-5">
+    {
+      languages.map((l) => (
+        <ProgressBar title={l.name} tag={l.level} percentage={l.pct} />
+      ))
+    }
+  </div>
+</article>

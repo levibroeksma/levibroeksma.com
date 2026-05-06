@@ -1,0 +1,28 @@
+---
+// Components
+
+// Data
+
+// Icons
+
+// Utils
+
+// Constants
+
+// Props
+const { title, tag, percentage } = Astro.props;
+---
+
+<div>
+  <div class="flex justify-between items-baseline mb-2">
+    <div class="font-medium">{title}</div>
+    <div class="text-xs font-mono text-muted-foreground">{tag}</div>
+  </div>
+  <div class="h-1.5 rounded-full bg-secondary overflow-hidden">
+    <div
+      class="h-full gradient-primary rounded-full transition-smooth"
+      style={{ width: `${percentage}%` }}
+    >
+    </div>
+  </div>
+</div>
