@@ -1,9 +1,15 @@
 ---
-const year = new Date().getFullYear();
-import i18n from "@data/i18n.json";
+// Components
+
+// Data
+import { footer } from "@data/i18n.json";
+
+// Utils
 import { getLangFromPathname } from "@lib/utils/i18n.js";
+
+// Constants
 const lang = getLangFromPathname(Astro.url.pathname) || "nl";
-const { footer } = i18n;
+const year = new Date().getFullYear();
 ---
 
 <footer class="py-5 border-t border-border">
