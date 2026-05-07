@@ -1,9 +1,18 @@
 ---
+// Components
+
+// Data
+import { contact } from "@data/i18n.json";
+
+// Icons
 import Location from "../../icons/LocationIcon.astro";
 import Mail from "../../icons/MailIcon.astro";
 import ArrowUpRight from "../../icons/ArrowUpRightIcon.astro";
-import { contact } from "@data/i18n.json";
+
+// Utils
 import { getLangFromPathname } from "@lib/utils/i18n.js";
+
+// Constants
 const lang = getLangFromPathname(Astro.url.pathname) || "nl";
 ---
 
