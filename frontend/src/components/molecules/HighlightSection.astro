@@ -1,0 +1,30 @@
+---
+// Components
+import Tag from "@atoms/Tag.astro";
+
+// Props
+const { title, label, description, tags } = Astro.props;
+---
+
+<article
+  class="mt-12 rounded-2xl gradient-primary text-primary-foreground p-8 md:p-12 shadow-elegant"
+>
+  <div class="grid md:grid-cols-12 gap-8 items-start">
+    <div class="md:col-span-4">
+      <div class="text-xs font-mono uppercase tracking-widest opacity-70 mb-3">
+        {label}
+      </div>
+      <h3 class="font-display text-3xl md:text-4xl font-medium leading-tight">
+        {title}
+      </h3>
+    </div>
+    <div class="md:col-span-8">
+      <p class="text-primary-foreground/90 leading-relaxed">
+        {description}
+      </p>
+      <div class="mt-6 flex flex-wrap gap-2">
+        {tags.map((t) => <Tag text={t} highlighted />)}
+      </div>
+    </div>
+  </div>
+</article>
