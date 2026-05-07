@@ -1,8 +1,8 @@
 [
   {
     "title": {
-      "nl": "VEMAP - Stakeholdersmanagementtool",
-      "en": "VEMAP - Stakeholder management tool"
+      "nl": "VEMAP",
+      "en": "VEMAP"
     },
     "org": {
       "nl": "MAPtm / NOVI Hogeschool",
@@ -30,8 +30,8 @@
   {
     "title": { "nl": "Synchromode Dashboard", "en": "Synchromode Dashboard" },
     "org": {
-      "nl": "Synchromode consortium",
-      "en": "Synchromode consortium"
+      "nl": "Synchromode Consortium",
+      "en": "Synchromode Consortium"
     },
     "period": "2025",
     "stack": [
@@ -53,7 +53,7 @@
       "nl": "MAPtm",
       "en": "MAPtm"
     },
-    "period": "2021 – 2026",
+    "period": "2021 - 2026",
     "stack": [
       "Python",
       "AWS Chalice",
@@ -70,8 +70,8 @@
   {
     "title": { "nl": "FAME Taxonomy", "en": "FAME Taxonomy" },
     "org": {
-      "nl": "MAPtm, FAME consortium",
-      "en": "MAPtm, FAME consortium"
+      "nl": "MAPtm, FAME Consortium",
+      "en": "MAPtm, FAME Consortium"
     },
     "period": "2024",
     "stack": ["Python", "AWS Chalice", "AstroJS", "AlpineJS", "Netlify"],
