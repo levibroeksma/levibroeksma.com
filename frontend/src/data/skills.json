@@ -4,7 +4,6 @@
     { "name": "CSS", "items": ["Tailwind"] },
     { "name": "Java", "items": ["Spring Boot"] },
     { "name": "Python", "items": ["AWS Chalice", "Flask", "Django"] },
-    { "name": "Rust", "items": [] },
     {
       "name": "JavaScript",
       "items": ["AstroJS", "AlpineJS", "ReactJS", "NodeJS", " TypeScript"]

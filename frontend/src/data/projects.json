@@ -30,8 +30,8 @@
   {
     "title": { "nl": "Synchromode Dashboard", "en": "Synchromode Dashboard" },
     "org": {
-      "nl": "Synchromode Consortium",
-      "en": "Synchromode Consortium"
+      "nl": "MAPtm, Synchromode Consortium",
+      "en": "MAPtm, Synchromode Consortium"
     },
     "period": "2025",
     "stack": [
@@ -43,8 +43,8 @@
       "AlpineJS"
     ],
     "description": {
-      "nl": "Druktepredictietool gebouwd op het TrafficDash-fundament. Combineert monitoring met druktevoorspellingsdata voor bottlenecks rondom weersgevoelige OV-infrastructuur. Event-driven, met een Kafka-topic dat elke 5 minuten een voorspelling op het wegennet doet. In samenwerking met CERTH en Be-Mobile.",
-      "en": "Traffic prediction tool built on the TrafficDash foundation. Combines monitoring with traffic prediction data for bottlenecks around weather-sensitive OV infrastructure. Event-driven, with a Kafka topic that makes a prediction every 5 minutes on the road network. In collaboration with CERTH and Be-Mobile."
+      "nl": "Druktepredictietool gebouwd op het TrafficDash-fundament. Combineert monitoring met druktevoorspellingsdata voor bottlenecks rondom weersgevoelige OV-infrastructuur. Event-driven, met een Kafka-topic dat op basis van historische data en weersverwachtingen voorspellingen op het wegennet doet. In samenwerking met CERTH en Be-Mobile.",
+      "en": "Traffic prediction tool built on the TrafficDash foundation. Combines monitoring with traffic prediction data for bottlenecks around weather-sensitive OV infrastructure. Event-driven, with a Kafka topic that makes predictions on the road network based on historical data and weather forecasts. In collaboration with CERTH and Be-Mobile."
     }
   },
   {
@@ -63,8 +63,8 @@
       "PostgreSQL"
     ],
     "description": {
-      "nl": "Als onderdeel van het projectteam (voornamelijk frontend) bijgedragen aan TrafficDash: monitoringsfunctionaliteit (configuratie en weergave), de evaluatiepagina en periodenconfiguratie. Maakt gebruik van meerdere databronnen van het NDW.",
-      "en": "Contributed to TrafficDash as part of the project team (primarily frontend): monitoring functionality (configuration and display), the evaluation page and period configuration. Uses multiple data sources from the NDW."
+      "nl": "Als onderdeel van het projectteam bijgedragen aan TrafficDash: monitoringsfunctionaliteit (configuratie en weergave), de evaluatiemodule en periodenconfiguratie. Maakt gebruik van meerdere databronnen van het NDW.",
+      "en": "Contributed to TrafficDash as part of the project team: monitoring functionality (configuration and display), the evaluation module and period configuration. Uses multiple data sources from the NDW."
     }
   },
   {

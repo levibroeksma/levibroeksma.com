@@ -9,7 +9,7 @@
         { "href": "#skills", "text": "Skills" },
         { "href": "#contact", "text": "Contact" }
       ],
-      "contactHref": "mailto:levi.broeksma@maptm.nl",
+      "contactHref": "mailto:levi@broeksma.nl",
       "contactText": "Neem contact op"
     },
     "en": {
@@ -21,7 +21,7 @@
         { "href": "#skills", "text": "Skills" },
         { "href": "#contact", "text": "Contact" }
       ],
-      "contactHref": "mailto:levi.broeksma@maptm.nl",
+      "contactHref": "mailto:levi@broeksma.nl",
       "contactText": "Get in touch"
     }
   },
@@ -39,8 +39,8 @@
       }
     },
     "description": {
-      "nl": "Ik bouw schaalbare, onderhoudbare software — van event-driven architecturen tot interactieve geo-visualisaties. Met passie voor kwaliteit, ambacht en geschikt voor morgen in een tijd waarin AI de wereld verandert.",
-      "en": "I build scalable, maintainable software — from event-driven architectures to interactive geo-visualizations. Passionate about quality, craftsmanship, and built for tomorrow in a time when AI is changing the world."
+      "nl": "Ik bouw schaalbare, onderhoudbare en overdraagbare software — van event-driven tot serverless architecturen en van dashboards tot interactieve geo-visualisaties. Met passie voor kwaliteit, ambacht en geschikt voor morgen in een tijd waarin AI de wereld verandert.",
+      "en": "I build scalable, maintainable software — from event-driven to serverless architectures and from dashboards to interactive geo-visualizations. Passionate about quality, craftsmanship, and built for tomorrow in a time when AI is changing the world."
     },
     "stats": {
       "nl": [
@@ -49,12 +49,12 @@
           "description": "Jaar ervaring"
         },
         {
-          "title": "5",
-          "description": "Recente projecten"
+          "title": "3",
+          "description": "Programmeertalen"
         },
         {
-          "title": "4",
-          "description": "Talen"
+          "title": "9",
+          "description": "Frameworks"
         },
         {
           "title": "BSc",
@@ -67,12 +67,12 @@
           "description": "Years of experience"
         },
         {
-          "title": "5",
-          "description": "Recent projects"
+          "title": "3",
+          "description": "Programming languages"
         },
         {
-          "title": "4",
-          "description": "Languages"
+          "title": "9",
+          "description": "Frameworks"
         },
         {
           "title": "BSc",
@@ -87,8 +87,8 @@
       "title": "Maker, denker, doener",
       "dateOfBirth": "26 — 07 — 1992",
       "paragraphs": [
-        "Ik heb een passie voor dingen maken, kwaliteit en ben detailgericht. Zo ben ik gefascineerd door horlogerie, houtbewerken, kunst, theater en cabaret. Ik hou van tekenen, gamen, programmeren, lezen, tijd doorbrengen met mijn vrienden, mijn vriendin en onze katten — en praten over politiek en maatschappij, muziek, familie en mijn vakgebied.",
-        "Ik ben communicatief vaardig, creatief en vindingrijk. Op professioneel vlak ben ik flexibel, leergierig, gestructureerd, werk graag in teamverband en hou ervan om complexe uitdagingen te vertalen naar werkende oplossingen."
+        "Ik heb een passie voor dingen maken, wordt gedreven door kwaliteit en ben detailgericht. Daarnaast ben ik communicatief vaardig, creatief en vindingrijk. Op professioneel vlak ben ik flexibel, leergierig, gestructureerd, werk graag in teamverband en hou ervan om complexe uitdagingen te vertalen naar werkende oplossingen.",
+        "Buiten mijn werk ben ik gefascineerd door horologie, ambachtelijk werk, kunst, theater en cabaret. Ik hou van tekenen, gamen, programmeren, lezen, koken, tijd doorbrengen met mijn vrienden, mijn vriendin en onze katten. Daarnast ben ik geîntereseerd in politiek, maatschappij, techniek, en muziek."
       ]
     },
     "en": {
@@ -105,7 +105,7 @@
     "nl": {
       "label": "02 — Werk",
       "title": "Recente projectervaring",
-      "description": "Een selectie van projecten waar ik de laatste jaren aan heb bijgedragen — van afstudeerwerk tot consortia.",
+      "description": "Een selectie van projecten waar ik de laatste jaren aan heb bijgedragen — van afstudeerwerk tot consortia (namens MAPtm).",
       "highlight": {
         "label": "Specialisme",
         "title": "Geo & data visualisatie",
@@ -116,7 +116,7 @@
     "en": {
       "label": "02 — Work",
       "title": "Recent project experience",
-      "description": "A selection of projects I have contributed to in recent years — from graduation work to consortia.",
+      "description": "A selection of projects I have contributed to in recent years — from graduation work to consortia (on behalf of MAPtm).",
       "highlight": {
         "label": "Specialism",
         "title": "Geo & data visualization",
@@ -159,7 +159,7 @@
       "title": "Laten we iets goeds bouwen",
       "description": "Informeer naar mijn beschikbaarheid of het maken van een vrijblijvend kennismakingsgesprek.",
       "emailLabel": "Email",
-      "emailValue": "levi.broeksma@maptm.nl",
+      "emailValue": "levi@broeksma.nl",
       "addressLabel": "Adres",
       "addressValue": "Eemnes, Utrecht"
     },
@@ -168,7 +168,7 @@
       "title": "Let's build something great",
       "description": "Inquire about my availability or scheduling a no-obligation introductory call.",
       "emailLabel": "Email",
-      "emailValue": "levi.broeksma@maptm.nl",
+      "emailValue": "levi@broeksma.nl",
       "addressLabel": "Address",
       "addressValue": "Eemnes, Utrecht"
     }

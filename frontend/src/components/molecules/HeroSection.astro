@@ -47,9 +47,9 @@ const lang = getLangFromPathname(Astro.url.pathname) || "nl";
         class="font-display text-5xl md:text-7xl lg:text-8xl font-medium leading-[0.95] tracking-tight"
       >
         {hero.title[lang].prefix}
-        <span class="text-gradient not-italic"
-          >{hero.title[lang].highlight}</span
-        >
+        <span class="text-gradient not-italic">
+          {hero.title[lang].highlight}
+        </span>
         {hero.title[lang].suffix}<span class="text-accent">.</span>
       </h1>
       <p
@@ -65,7 +65,7 @@ const lang = getLangFromPathname(Astro.url.pathname) || "nl";
         <SecondaryBtn href="#contact" text="Contactgegevens" />
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-y-8 max-w-2xl">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-y-8 max-w-3xl">
         {
           hero.stats[lang]?.map((s) => (
             <HeroStatCard title={s.title} description={s.description} />
