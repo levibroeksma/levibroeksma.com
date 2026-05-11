@@ -1,0 +1,44 @@
+---
+// Components
+import SkillCardTableRow from "./SkillCardTableRow.astro";
+
+// Data
+
+// Icons
+
+// Utils
+
+// Constants
+
+// Props
+const { icon: Icon, title, items } = Astro.props;
+---
+
+<div
+  class="rounded-2xl border border-border bg-card p-6 hover:shadow-soft transition-smooth w-full"
+>
+  <div class="flex items-center gap-3 mb-5">
+    <div
+      class="h-10 w-10 rounded-xl gradient-primary text-primary-foreground flex items-center justify-center shadow-soft shrink-0"
+    >
+      <Icon class="h-5 w-5" />
+    </div>
+    <h3 class="font-display text-lg font-semibold">{title}</h3>
+  </div>
+  <table class="layout-auto w-full text-sm divide-y">
+    <tbody>
+      {
+        items.length > 0 &&
+          items.map((it) => {
+            if (typeof it === "string") {
+              return <SkillCardTableRow title={it} items={[]} />;
+            } else if (it.items && it.items.length > 0) {
+              return <SkillCardTableRow title={it.name} items={it.items} />;
+            } else {
+              return <SkillCardTableRow title={it.name} items={it.items} />;
+            }
+          })
+      }
+    </tbody>
+  </table>
+</div>

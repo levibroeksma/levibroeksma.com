@@ -1,15 +1,21 @@
 ---
-import Sparkles from "@icons/SparklesIcon.astro";
-import ArrowUpRight from "@icons/ArrowUpRightIcon.astro";
+// Components
 import SecondaryBtn from "@atoms/SecondaryBtn.astro";
 import PrimaryBtn from "@atoms/PrimaryBtn.astro";
 import HeroStatCard from "@atoms/HeroStatCard.astro";
 
-const year = new Date().getFullYear();
+// Data
+import { hero } from "@data/i18n.json";
 
-import i18n from "@data/i18n.json";
+// Icons
+import Sparkles from "@icons/SparklesIcon.astro";
+import ArrowUpRight from "@icons/ArrowUpRightIcon.astro";
+
+// Utils
 import { getLangFromPathname } from "@lib/utils/i18n.js";
-const { hero } = i18n;
+
+// Constants
+const year = new Date().getFullYear();
 const lang = getLangFromPathname(Astro.url.pathname) || "nl";
 ---
 
@@ -41,9 +47,9 @@ const lang = getLangFromPathname(Astro.url.pathname) || "nl";
         class="font-display text-5xl md:text-7xl lg:text-8xl font-medium leading-[0.95] tracking-tight"
       >
         {hero.title[lang].prefix}
-        <span class="text-gradient not-italic"
-          >{hero.title[lang].highlight}</span
-        >
+        <span class="text-gradient not-italic">
+          {hero.title[lang].highlight}
+        </span>
         {hero.title[lang].suffix}<span class="text-accent">.</span>
       </h1>
       <p
@@ -59,7 +65,7 @@ const lang = getLangFromPathname(Astro.url.pathname) || "nl";
         <SecondaryBtn href="#contact" text="Contactgegevens" />
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-y-8 max-w-2xl">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-y-8 max-w-3xl">
         {
           hero.stats[lang]?.map((s) => (
             <HeroStatCard title={s.title} description={s.description} />

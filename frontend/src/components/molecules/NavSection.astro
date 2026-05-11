@@ -1,12 +1,19 @@
 ---
+// Components
 import NavLink from "@atoms/NavLink.astro";
 import GradientLinkButton from "@atoms/GradientLinkButton.astro";
-import ThemeToggle from "@atoms/ThemeToggle.astro";
 import LangToggle from "@atoms/LangToggle.astro";
-import i18n from "@data/i18n.json";
+import ThemeToggle from "@atoms/ThemeToggle.astro";
+
+// Data
+import { nav } from "@data/i18n.json";
+
+// Icons
+
+// Utils
 import { getLangFromPathname } from "@lib/utils/i18n.js";
 
-const { nav } = i18n;
+// Constants
 const lang = getLangFromPathname(Astro.url.pathname) || "nl";
 ---
 
@@ -14,13 +21,15 @@ const lang = getLangFromPathname(Astro.url.pathname) || "nl";
   class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/70 border-b border-border/50"
 >
   <div class="container mx-auto flex items-center justify-between p-4 lg:px-0">
-    <span class="text-lg font-semibold tracking-tight font-serif">
-      {nav[lang].brandFirst}
-      <span class="text-accent">.</span>
-      {nav[lang].brandLast}
-    </span>
+    <a href="#top">
+      <span class="text-lg font-semibold tracking-tight font-serif">
+        {nav[lang].brandFirst}
+        <span class="text-accent">.</span>
+        {nav[lang].brandLast}
+      </span>
+    </a>
     <div
-      class="hidden md:flex items-center gap-8 text-sm text-muted-foreground"
+      class="hidden lg:flex items-center gap-8 text-sm text-muted-foreground"
     >
       {
         nav[lang].links.map((link) => (

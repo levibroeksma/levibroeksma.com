@@ -1,0 +1,30 @@
+---
+// Components
+import SkillCardListItem from "@atoms/SkillCardListItem.astro";
+
+// Data
+
+// Icons
+
+// Utils
+
+// Constants
+
+// Props
+const { title, items = [] } = Astro.props;
+---
+
+<tr class="border-b last:border-b-0 text-xs md:text-sm">
+  <td class="text-left py-1.5 font-bold" align="left" valign="top">
+    <span>{title}</span>
+  </td>
+  <td class="text-left py-1.5" align="left" valign="top">
+    <ul>
+      {
+        items &&
+          items.length > 0 &&
+          items.map((item) => <SkillCardListItem item={item} />)
+      }
+    </ul>
+  </td>
+</tr>
