@@ -1,0 +1,20 @@
+---
+import { getLangFromPathname, LANG_ENUM } from "@lib/utils/i18n.js";
+import LanguagesIcon from "@icons/LanguagesIcon.astro";
+
+const lang = getLangFromPathname(Astro.url.pathname);
+const isNl = lang === LANG_ENUM.NL;
+---
+
+<div
+  class="flex items-center gap-2 p-2 text-muted-foreground text-xs border border-border bg-card text-foreground hover:bg-secondary transition-smooth rounded-full"
+>
+  <LanguagesIcon class="size-4" />
+  <a class="cursor-pointer" aria-label="Switch to Dutch" href="/nl/">
+    <span class={isNl ? "font-bold text-accent" : "font-normal"}>NL</span>
+  </a>
+  <span>|</span>
+  <a class="cursor-pointer" aria-label="Switch to English" href="/">
+    <span class={!isNl ? "font-bold text-accent" : "font-normal "}>EN</span>
+  </a>
+</div>

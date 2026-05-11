@@ -1,7 +1,13 @@
 [
   {
-    "title": "VEMAP",
-    "org": "MAPtm / NOVI Hogeschool",
+    "title": {
+      "nl": "VEMAP - Stakeholdersmanagementtool",
+      "en": "VEMAP - Stakeholder management tool"
+    },
+    "org": {
+      "nl": "MAPtm / NOVI Hogeschool",
+      "en": "MAPtm / NOVI University"
+    },
     "period": "2025 / 2026",
     "stack": [
       "Python",
@@ -16,11 +22,17 @@
       "TypeScript",
       "PostgreSQL"
     ],
-    "description": "Afstudeerproject (Bachelor ICT Software Development): zelfstandig ontworpen en gebouwd. VEMAP ondersteunt het VKM-planproces via standaardisatie en automatisering. Gewerkt volgens OOP, Clean / Microservice / Event-Driven architecturen, SOLID/DRY/KISS/SoC en schaalbaar databaseontwerp."
+    "description": {
+      "nl": "Afstudeerproject (Bachelor ICT Software Development): zelfstandig ontworpen en gebouwd. VEMAP ondersteunt het VKM-planproces via standaardisatie en automatisering. Gewerkt volgens OOP, Clean / Microservice / Event-Driven architecturen, SOLID/DRY/KISS/SoC en schaalbaar databaseontwerp.",
+      "en": "Graduation project (Bachelor ICT Software Development): self-designed and built. VEMAP supports the VKM-plan process through standardization and automation. Worked according to OOP, Clean / Microservice / Event-Driven architecturen, SOLID/DRY/KISS/SoC and scalable database design."
+    }
   },
   {
-    "title": "Synchromode Dashboard",
-    "org": "Synchromode-consortium",
+    "title": { "nl": "Synchromode Dashboard", "en": "Synchromode Dashboard" },
+    "org": {
+      "nl": "Synchromode consortium",
+      "en": "Synchromode consortium"
+    },
     "period": "2025",
     "stack": [
       "Python",
@@ -30,11 +42,17 @@
       "AstroJS",
       "AlpineJS"
     ],
-    "description": "Druktepredictietool gebouwd op het TrafficDash-fundament. Combineert monitoring met druktevoorspellingsdata voor bottlenecks rondom weersgevoelige OV-infrastructuur. Event-driven, met een Kafka-topic dat elke 5 minuten een voorspelling op het wegennet doet. In samenwerking met CERTH en Be-Mobile."
+    "description": {
+      "nl": "Druktepredictietool gebouwd op het TrafficDash-fundament. Combineert monitoring met druktevoorspellingsdata voor bottlenecks rondom weersgevoelige OV-infrastructuur. Event-driven, met een Kafka-topic dat elke 5 minuten een voorspelling op het wegennet doet. In samenwerking met CERTH en Be-Mobile.",
+      "en": "Traffic prediction tool built on the TrafficDash foundation. Combines monitoring with traffic prediction data for bottlenecks around weather-sensitive OV infrastructure. Event-driven, with a Kafka topic that makes a prediction every 5 minutes on the road network. In collaboration with CERTH and Be-Mobile."
+    }
   },
   {
-    "title": "TrafficDash",
-    "org": "MAPtm",
+    "title": { "nl": "TrafficDash", "en": "TrafficDash" },
+    "org": {
+      "nl": "MAPtm",
+      "en": "MAPtm"
+    },
     "period": "2021 – 2026",
     "stack": [
       "Python",
@@ -44,20 +62,35 @@
       "AlpineJS",
       "PostgreSQL"
     ],
-    "description": "Als onderdeel van het projectteam (voornamelijk frontend) bijgedragen aan TrafficDash: monitoringsfunctionaliteit (configuratie en weergave), de evaluatiepagina en periodenconfiguratie. Maakt gebruik van meerdere databronnen van het NDW."
+    "description": {
+      "nl": "Als onderdeel van het projectteam (voornamelijk frontend) bijgedragen aan TrafficDash: monitoringsfunctionaliteit (configuratie en weergave), de evaluatiepagina en periodenconfiguratie. Maakt gebruik van meerdere databronnen van het NDW.",
+      "en": "Contributed to TrafficDash as part of the project team (primarily frontend): monitoring functionality (configuration and display), the evaluation page and period configuration. Uses multiple data sources from the NDW."
+    }
   },
   {
-    "title": "FAME Taxonomy",
-    "org": "MAPtm, FAME-consortium",
+    "title": { "nl": "FAME Taxonomy", "en": "FAME Taxonomy" },
+    "org": {
+      "nl": "MAPtm, FAME consortium",
+      "en": "MAPtm, FAME consortium"
+    },
     "period": "2024",
     "stack": ["Python", "AWS Chalice", "AstroJS", "AlpineJS", "Netlify"],
-    "description": "Webapplicatie voor de FAME-taxonomy. Onderhoudbaar door iedereen met basis computervaardigheden: een Excel-sheet wordt door een Python-script geparsed, gevalideerd en omgezet naar JSON, dat als bron dient voor de met templating gegenereerde webapplicatie."
+    "description": {
+      "nl": "Webapplicatie voor de FAME-taxonomy. Onderhoudbaar door iedereen met basis computervaardigheden: een Excel-sheet wordt door een Python-script geparsed, gevalideerd en omgezet naar JSON, dat als bron dient voor de met templating gegenereerde webapplicatie.",
+      "en": "Web application for the FAME taxonomy. Maintainable by anyone with basic computer skills: an Excel sheet is parsed by a Python script, validated and converted to JSON, which serves as the source for the templated web application."
+    }
   },
   {
-    "title": "Receptentracker",
-    "org": "NOVI Hogeschool",
+    "title": { "nl": "Receptentracker", "en": "Receptentracker" },
+    "org": {
+      "nl": "NOVI Hogeschool",
+      "en": "NOVI University"
+    },
     "period": "2021",
     "stack": ["Java", "Spring Boot", "ReactJS"],
-    "description": "Eindopdracht HBO Fullstack Developer bootcamp. Een receptgebaseerd socialmediaplatform waarop je recepten van anderen kunt opslaan, dupliceren en bewerken — een digitaal kookboek."
+    "description": {
+      "nl": "Eindopdracht HBO Fullstack Developer bootcamp. Een receptgebaseerd socialmediaplatform waarop je recepten van anderen kunt opslaan, dupliceren en bewerken — een digitaal kookboek.",
+      "en": "Final assignment HBO Fullstack Developer bootcamp. A recipe-based social media platform where you can save, duplicate and edit recipes — a digital cookbook."
+    }
   }
 ]
